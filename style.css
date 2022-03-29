@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+section
+{
+  position: relative;
+  widows: 100%;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  position: fixed;
+  bottom: 75px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  animation: left-in 1s ease-in  forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.content h2
+{
+  color: #A00000;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.content p
+{
+  color: #fff;
+  font-size: 0.8em;
+}
+.content a
+{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background: #ff256552;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-weight: 2px;
+  letter-spacing: 2px;
+}
+.imgbg
+{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  animation: left-in 0.25s ease-in  forwards;
+  animation-delay: 2s;
+  opacity: 1;
+}
+.imgbg img
+{
+  width: 100px;
+  height: 100px;
+  animation: fade-in 0.25s ease-in  forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.sci
+{
+  position: absolute;
+  bottom: 25px;
+  right: 150px;
+  display: flex;
+  animation: left-in 0.25s ease-in  forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.sci li
+{
+  list-style: none;
+}
+.sci li a
+{
+  text-decoration: none;
+  color: #282828;
+  margin-right: 50px;
+  font-size: 1.2em;
+}
+.sci li a:hover
+{
+  height: 50px;
+  width: 50px;
+}
+.nav
+{
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  display: flex;
+  border-left: 5px solid #C80000;
+  padding-left: 20px;
+  animation: left-in 0.25s ease-in  forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.nav li
+{
+  list-style: none;
+}
+.nav li a
+{
+  text-decoration: none;
+  color: #282828;
+  margin-right: 30px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav li a:hover
+{
+  color: #009933;
+}
+@keyframes fade-in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes left-in
+{
+    0%
+    {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
